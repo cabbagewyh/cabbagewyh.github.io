@@ -78,7 +78,7 @@
     
     <!--- Seo Part-->
     
-    <link rel="canonical" href="https://cabbagewyh.github.io/2024/04/18/love/"/>
+    <link rel="canonical" href="https://cabbagewyh.github.io/2026/04/18/love_initial/"/>
     <meta name="robots" content="index,follow">
     <meta name="googlebot" content="index,follow">
     <meta name="revisit-after" content="1 days">
@@ -87,14 +87,14 @@
         
         <meta name="description" content="Hexo Theme Redefine, Redefine Your Hexo Journey.">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Love Gallery">
-<meta property="og:url" content="https://cabbagewyh.github.io/2024/04/18/love/index.html">
+<meta property="og:title" content="Love">
+<meta property="og:url" content="https://cabbagewyh.github.io/2026/04/18/love_initial/index.html">
 <meta property="og:site_name" content="Happy Memory">
 <meta property="og:description" content="Hexo Theme Redefine, Redefine Your Hexo Journey.">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://cabbagewyh.github.io/images/redefine-og.webp">
-<meta property="article:published_time" content="2024-04-17T16:33:57.000Z">
-<meta property="article:modified_time" content="2026-04-17T16:41:50.597Z">
+<meta property="article:published_time" content="2026-04-17T16:00:00.000Z">
+<meta property="article:modified_time" content="2026-04-17T16:51:07.525Z">
 <meta property="article:author" content="Yuhan Wang">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://cabbagewyh.github.io/images/redefine-og.webp">
@@ -109,7 +109,7 @@
     
     <title>
         
-            Love Gallery | Wyh 的主页
+            Love | Wyh 的主页
         
     </title>
 
@@ -298,7 +298,7 @@
 		<div class="article-title relative w-full">
 			
 			<div class="w-full flex items-center pt-6 justify-start">
-				<h1 class="article-title-regular text-second-text-color tracking-tight text-4xl md:text-6xl font-semibold px-2 sm:px-6 md:px-8 py-3">Love Gallery</h1>
+				<h1 class="article-title-regular text-second-text-color tracking-tight text-4xl md:text-6xl font-semibold px-2 sm:px-6 md:px-8 py-3">Love</h1>
 			</div>
 			
 		</div>
@@ -319,15 +319,15 @@
 					<div class="article-meta-info">
     <span class="article-date article-meta-item">
         <i class="fa-regular fa-pen-fancy"></i>&nbsp;
-        <span class="desktop">2024-04-18 00:33:57</span>
-        <span class="mobile">2024-04-18 00:33:57</span>
+        <span class="desktop">2026-04-18</span>
+        <span class="mobile">2026-04-18</span>
         <span class="hover-info">创建</span>
     </span>
     
         <span class="article-date article-meta-item">
             <i class="fa-regular fa-wrench"></i>&nbsp;
-            <span class="desktop">2026-04-18 00:41:50</span>
-            <span class="mobile">2026-04-18 00:41:50</span>
+            <span class="desktop">2026-04-18 00:51:07</span>
+            <span class="mobile">2026-04-18 00:51:07</span>
             <span class="hover-info">更新</span>
         </span>
     
@@ -354,7 +354,8 @@
 
 
 		<div class="article-content markdown-body px-2 sm:px-6 md:px-8 pb-8">
-			<!DOCTYPE html>
+			
+<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
@@ -363,645 +364,669 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&display=swap');
 
-<pre><code>    * &#123;
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    &#125;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    body &#123;
-        min-height: 100vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 24px;
-        background: linear-gradient(135deg, #fce4ec 0%, #f8bbd0 30%, #f48fb1 60%, #fce4ec 100%);
-        font-family: &#39;Noto Serif SC&#39;, serif;
-        overflow-x: hidden;
-        overflow-y: auto;
-        padding: 32px 16px;
-    &#125;
+        body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 24px;
+            background: linear-gradient(135deg, #fce4ec 0%, #f8bbd0 30%, #f48fb1 60%, #fce4ec 100%);
+            font-family: 'Noto Serif SC', serif;
+            overflow-x: hidden;
+            overflow-y: auto;
+            padding: 32px 16px;
+        }
 
-    /* Floating hearts background */
-    .hearts-bg &#123;
-        position: fixed;
-        top: 0; left: 0;
-        width: 100%; height: 100%;
-        pointer-events: none;
-        z-index: 0;
-    &#125;
+        /* Floating hearts background */
+        .hearts-bg {
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            pointer-events: none;
+            z-index: 0;
+        }
 
-    .heart &#123;
-        position: absolute;
-        color: rgba(244, 143, 177, 0.25);
-        animation: floatHeart linear infinite;
-    &#125;
+        .heart {
+            position: absolute;
+            color: rgba(244, 143, 177, 0.25);
+            animation: floatHeart linear infinite;
+        }
 
-    @keyframes floatHeart &#123;
-        0% &#123; transform: translateY(110vh) rotate(0deg); opacity: 0; &#125;
-        10% &#123; opacity: 1; &#125;
-        90% &#123; opacity: 1; &#125;
-        100% &#123; transform: translateY(-10vh) rotate(360deg); opacity: 0; &#125;
-    &#125;
+        @keyframes floatHeart {
+            0% { transform: translateY(110vh) rotate(0deg); opacity: 0; }
+            10% { opacity: 1; }
+            90% { opacity: 1; }
+            100% { transform: translateY(-10vh) rotate(360deg); opacity: 0; }
+        }
 
-    .carousel-container &#123;
-        position: relative;
-        z-index: 1;
-        width: 520px;
-        max-width: 90vw;
-        background: rgba(255, 255, 255, 0.45);
-        backdrop-filter: blur(20px);
-        -webkit-backdrop-filter: blur(20px);
-        border-radius: 24px;
-        border: 1.5px solid rgba(255, 255, 255, 0.6);
-        box-shadow:
-            0 8px 32px rgba(244, 143, 177, 0.3),
-            0 2px 8px rgba(0, 0, 0, 0.05),
-            inset 0 1px 0 rgba(255, 255, 255, 0.8);
-        overflow: hidden;
-        padding: 16px;
-    &#125;
+        .carousel-container {
+            position: relative;
+            z-index: 1;
+            width: 520px;
+            max-width: 90vw;
+            background: rgba(255, 255, 255, 0.45);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-radius: 24px;
+            border: 1.5px solid rgba(255, 255, 255, 0.6);
+            box-shadow:
+                0 8px 32px rgba(244, 143, 177, 0.3),
+                0 2px 8px rgba(0, 0, 0, 0.05),
+                inset 0 1px 0 rgba(255, 255, 255, 0.8);
+            overflow: hidden;
+            padding: 16px;
+        }
 
-    .title-bar &#123;
-        text-align: center;
-        padding: 8px 0 12px;
-    &#125;
+        .title-bar {
+            text-align: center;
+            padding: 8px 0 12px;
+        }
 
-    .title-bar h1 &#123;
-        font-size: 22px;
-        font-weight: 700;
-        background: linear-gradient(135deg, #e91e63, #f06292);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-        letter-spacing: 4px;
-    &#125;
+        .title-bar h1 {
+            font-size: 22px;
+            font-weight: 700;
+            background: linear-gradient(135deg, #e91e63, #f06292);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            letter-spacing: 4px;
+        }
 
-    .carousel &#123;
-        position: relative;
-        width: 100%;
-        aspect-ratio: 4 / 5;
-        border-radius: 16px;
-        overflow: hidden;
-        box-shadow:
-            0 4px 20px rgba(233, 30, 99, 0.15),
-            inset 0 0 0 1px rgba(255, 255, 255, 0.3);
-    &#125;
+        .carousel {
+            position: relative;
+            width: 100%;
+            aspect-ratio: 4 / 5;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow:
+                0 4px 20px rgba(233, 30, 99, 0.15),
+                inset 0 0 0 1px rgba(255, 255, 255, 0.3);
+        }
 
-    .slide &#123;
-        position: absolute;
-        top: 0; left: 0;
-        width: 100%; height: 100%;
-        opacity: 0;
-        transition: opacity 1s ease-in-out;
-        display: flex;
-        flex-direction: column;
-    &#125;
+        .slide {
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+            display: flex;
+            flex-direction: column;
+        }
 
-    .slide.active &#123;
-        opacity: 1;
-    &#125;
+        .slide.active {
+            opacity: 1;
+        }
 
-    .slide-image-wrapper &#123;
-        flex: 1;
-        overflow: hidden;
-        position: relative;
-    &#125;
+        .slide-image-wrapper {
+            flex: 1;
+            overflow: hidden;
+            position: relative;
+        }
 
-    .slide-image-wrapper img &#123;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        transition: transform 8s ease-out;
-    &#125;
+        .slide-image-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 8s ease-out;
+        }
 
-    .slide.active .slide-image-wrapper img &#123;
-        transform: scale(1.08);
-    &#125;
+        .slide.active .slide-image-wrapper img {
+            transform: scale(1.08);
+        }
 
-    .slide-image-wrapper::after &#123;
-        content: &#39;&#39;;
-        position: absolute;
-        bottom: 0; left: 0;
-        width: 100%;
-        height: 50%;
-        background: linear-gradient(to top, rgba(0,0,0,0.5), transparent);
-        pointer-events: none;
-    &#125;
+        .slide-image-wrapper::after {
+            content: '';
+            position: absolute;
+            bottom: 0; left: 0;
+            width: 100%;
+            height: 50%;
+            background: linear-gradient(to top, rgba(0,0,0,0.5), transparent);
+            pointer-events: none;
+        }
 
-    .slide-caption &#123;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        padding: 40px 24px 24px;
-        color: white;
-        text-align: center;
-        z-index: 2;
-    &#125;
+        .slide-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 40px 24px 24px;
+            color: white;
+            text-align: center;
+            z-index: 2;
+        }
 
-    .slide-caption p &#123;
-        font-size: 16px;
-        font-weight: 400;
-        letter-spacing: 2px;
-        text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
-        line-height: 1.8;
-    &#125;
+        .slide-caption p {
+            font-size: 16px;
+            font-weight: 400;
+            letter-spacing: 2px;
+            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+            line-height: 1.8;
+        }
 
-    /* Navigation arrows */
-    .nav-btn &#123;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 36px; height: 36px;
-        border: none;
-        border-radius: 50%;
-        background: rgba(255, 255, 255, 0.7);
-        backdrop-filter: blur(8px);
-        color: #e91e63;
-        font-size: 16px;
-        cursor: pointer;
-        z-index: 10;
-        transition: all 0.3s ease;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    &#125;
+        /* Navigation arrows */
+        .nav-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 36px; height: 36px;
+            border: none;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(8px);
+            color: #e91e63;
+            font-size: 16px;
+            cursor: pointer;
+            z-index: 10;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
 
-    .nav-btn:hover &#123;
-        background: rgba(255, 255, 255, 0.95);
-        transform: translateY(-50%) scale(1.1);
-        box-shadow: 0 4px 16px rgba(233, 30, 99, 0.25);
-    &#125;
+        .nav-btn:hover {
+            background: rgba(255, 255, 255, 0.95);
+            transform: translateY(-50%) scale(1.1);
+            box-shadow: 0 4px 16px rgba(233, 30, 99, 0.25);
+        }
 
-    .nav-btn.prev &#123; left: 10px; &#125;
-    .nav-btn.next &#123; right: 10px; &#125;
+        .nav-btn.prev { left: 10px; }
+        .nav-btn.next { right: 10px; }
 
-    /* Dots indicator */
-    .dots &#123;
-        display: flex;
-        justify-content: center;
-        gap: 10px;
-        padding: 16px 0 4px;
-    &#125;
+        /* Dots indicator */
+        .dots {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            padding: 16px 0 4px;
+        }
 
-    .dot &#123;
-        width: 8px; height: 8px;
-        border-radius: 50%;
-        background: rgba(233, 30, 99, 0.2);
-        cursor: pointer;
-        transition: all 0.4s ease;
-        border: none;
-    &#125;
+        .dot {
+            width: 8px; height: 8px;
+            border-radius: 50%;
+            background: rgba(233, 30, 99, 0.2);
+            cursor: pointer;
+            transition: all 0.4s ease;
+            border: none;
+        }
 
-    .dot.active &#123;
-        background: #e91e63;
-        transform: scale(1.3);
-        box-shadow: 0 0 8px rgba(233, 30, 99, 0.4);
-    &#125;
+        .dot.active {
+            background: #e91e63;
+            transform: scale(1.3);
+            box-shadow: 0 0 8px rgba(233, 30, 99, 0.4);
+        }
 
-    .dot:hover:not(.active) &#123;
-        background: rgba(233, 30, 99, 0.5);
-    &#125;
+        .dot:hover:not(.active) {
+            background: rgba(233, 30, 99, 0.5);
+        }
 
-    /* Progress bar */
-    .progress-bar &#123;
-        height: 3px;
-        background: rgba(233, 30, 99, 0.1);
-        border-radius: 3px;
-        margin: 0 16px 8px;
-        overflow: hidden;
-    &#125;
+        /* Progress bar */
+        .progress-bar {
+            height: 3px;
+            background: rgba(233, 30, 99, 0.1);
+            border-radius: 3px;
+            margin: 0 16px 8px;
+            overflow: hidden;
+        }
 
-    .progress-bar-fill &#123;
-        height: 100%;
-        background: linear-gradient(90deg, #f48fb1, #e91e63);
-        border-radius: 3px;
-        width: 0%;
-        transition: width 0.1s linear;
-    &#125;
+        .progress-bar-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #f48fb1, #e91e63);
+            border-radius: 3px;
+            width: 0%;
+            transition: width 0.1s linear;
+        }
 
-    /* Pause hint */
-    .pause-hint &#123;
-        text-align: center;
-        font-size: 12px;
-        color: rgba(233, 30, 99, 0.5);
-        padding-bottom: 4px;
-        letter-spacing: 1px;
-    &#125;
+        /* Pause hint */
+        .pause-hint {
+            text-align: center;
+            font-size: 12px;
+            color: rgba(233, 30, 99, 0.5);
+            padding-bottom: 4px;
+            letter-spacing: 1px;
+        }
 
-    /* Confession module */
-    .confession-card &#123;
-        position: relative;
-        z-index: 1;
-        width: 520px;
-        max-width: 90vw;
-        background: rgba(255, 255, 255, 0.45);
-        backdrop-filter: blur(20px);
-        -webkit-backdrop-filter: blur(20px);
-        border-radius: 24px;
-        border: 1.5px solid rgba(255, 255, 255, 0.6);
-        box-shadow:
-            0 8px 32px rgba(244, 143, 177, 0.3),
-            0 2px 8px rgba(0, 0, 0, 0.05),
-            inset 0 1px 0 rgba(255, 255, 255, 0.8);
-        padding: 32px 28px;
-        text-align: center;
-    &#125;
+        /* Confession module */
+        .confession-card {
+            position: relative;
+            z-index: 1;
+            width: 520px;
+            max-width: 90vw;
+            background: rgba(255, 255, 255, 0.45);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-radius: 24px;
+            border: 1.5px solid rgba(255, 255, 255, 0.6);
+            box-shadow:
+                0 8px 32px rgba(244, 143, 177, 0.3),
+                0 2px 8px rgba(0, 0, 0, 0.05),
+                inset 0 1px 0 rgba(255, 255, 255, 0.8);
+            padding: 32px 28px;
+            text-align: center;
+        }
 
-    .confession-card .heart-icon &#123;
-        font-size: 40px;
-        display: block;
-        margin-bottom: 16px;
-        animation: heartbeat 1.5s ease-in-out infinite;
-    &#125;
+        .confession-card .heart-icon {
+            font-size: 40px;
+            display: block;
+            margin-bottom: 16px;
+            animation: heartbeat 1.5s ease-in-out infinite;
+        }
 
-    @keyframes heartbeat &#123;
-        0%, 100% &#123; transform: scale(1); &#125;
-        15% &#123; transform: scale(1.15); &#125;
-        30% &#123; transform: scale(1); &#125;
-        45% &#123; transform: scale(1.1); &#125;
-    &#125;
+        @keyframes heartbeat {
+            0%, 100% { transform: scale(1); }
+            15% { transform: scale(1.15); }
+            30% { transform: scale(1); }
+            45% { transform: scale(1.1); }
+        }
 
-    .confession-card .confession-text &#123;
-        font-size: 18px;
-        color: #880e4f;
-        line-height: 2;
-        letter-spacing: 1.5px;
-        margin-bottom: 28px;
-    &#125;
+        .confession-card .confession-text {
+            font-size: 18px;
+            color: #880e4f;
+            line-height: 2;
+            letter-spacing: 1.5px;
+            margin-bottom: 28px;
+        }
 
-    .confession-card .confession-text .highlight &#123;
-        font-weight: 700;
-        color: #c2185b;
-        position: relative;
-    &#125;
+        .confession-card .confession-text .highlight {
+            font-weight: 700;
+            color: #c2185b;
+            position: relative;
+        }
 
-    .confession-card .confession-text .highlight::after &#123;
-        content: &#39;&#39;;
-        position: absolute;
-        bottom: -2px;
-        left: 0;
-        width: 100%;
-        height: 2px;
-        background: linear-gradient(90deg, transparent, #f48fb1, transparent);
-    &#125;
+        .confession-card .confession-text .highlight::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #f48fb1, transparent);
+        }
 
-    .confession-buttons &#123;
-        display: flex;
-        gap: 16px;
-        justify-content: center;
-    &#125;
+        .confession-buttons {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+        }
 
-    .confession-btn &#123;
-        flex: 1;
-        max-width: 180px;
-        padding: 14px 24px;
-        border: none;
-        border-radius: 50px;
-        font-size: 16px;
-        font-family: &#39;Noto Serif SC&#39;, serif;
-        font-weight: 700;
-        cursor: pointer;
-        letter-spacing: 2px;
-        transition: all 0.3s ease;
-        position: relative;
-        overflow: hidden;
-    &#125;
+        .confession-btn {
+            flex: 1;
+            max-width: 180px;
+            padding: 14px 24px;
+            border: none;
+            border-radius: 50px;
+            font-size: 16px;
+            font-family: 'Noto Serif SC', serif;
+            font-weight: 700;
+            cursor: pointer;
+            letter-spacing: 2px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
 
-    .confession-btn::before &#123;
-        content: &#39;&#39;;
-        position: absolute;
-        top: 0; left: -100%;
-        width: 100%; height: 100%;
-        background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
-        transition: left 0.5s ease;
-    &#125;
+        .confession-btn::before {
+            content: '';
+            position: absolute;
+            top: 0; left: -100%;
+            width: 100%; height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+            transition: left 0.5s ease;
+        }
 
-    .confession-btn:hover::before &#123;
-        left: 100%;
-    &#125;
+        .confession-btn:hover::before {
+            left: 100%;
+        }
 
-    .btn-accept &#123;
-        background: linear-gradient(135deg, #e91e63, #f06292);
-        color: white;
-        box-shadow: 0 4px 15px rgba(233, 30, 99, 0.4);
-    &#125;
+        .btn-accept {
+            background: linear-gradient(135deg, #e91e63, #f06292);
+            color: white;
+            box-shadow: 0 4px 15px rgba(233, 30, 99, 0.4);
+        }
 
-    .btn-accept:hover &#123;
-        transform: translateY(-2px);
-        box-shadow: 0 6px 20px rgba(233, 30, 99, 0.5);
-    &#125;
+        .btn-accept:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(233, 30, 99, 0.5);
+        }
 
-    .btn-accept:active &#123;
-        transform: translateY(0);
-    &#125;
+        .btn-accept:active {
+            transform: translateY(0);
+        }
 
-    .btn-think &#123;
-        background: rgba(255, 255, 255, 0.6);
-        color: #ad1457;
-        border: 1.5px solid rgba(233, 30, 99, 0.3);
-    &#125;
+        .btn-think {
+            background: rgba(255, 255, 255, 0.6);
+            color: #ad1457;
+            border: 1.5px solid rgba(233, 30, 99, 0.3);
+        }
 
-    .btn-think:hover &#123;
-        background: rgba(255, 255, 255, 0.85);
-        transform: translateY(-2px);
-        box-shadow: 0 4px 15px rgba(233, 30, 99, 0.15);
-    &#125;
+        .btn-think:hover {
+            background: rgba(255, 255, 255, 0.85);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(233, 30, 99, 0.15);
+        }
 
-    .btn-think:active &#123;
-        transform: translateY(0);
-    &#125;
+        .btn-think:active {
+            transform: translateY(0);
+        }
 
-    /* Toast notification */
-    .toast &#123;
-        position: fixed;
-        top: 24px;
-        left: 50%;
-        transform: translateX(-50%) translateY(-100px);
-        background: rgba(255, 255, 255, 0.9);
-        backdrop-filter: blur(16px);
-        -webkit-backdrop-filter: blur(16px);
-        border-radius: 16px;
-        padding: 16px 28px;
-        box-shadow: 0 8px 32px rgba(0,0,0,0.12);
-        z-index: 1000;
-        opacity: 0;
-        transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-        text-align: center;
-        max-width: 90vw;
-        border: 1px solid rgba(255,255,255,0.6);
-    &#125;
+        /* Toast notification */
+        .toast {
+            position: fixed;
+            top: 24px;
+            left: 50%;
+            transform: translateX(-50%) translateY(-100px);
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-radius: 16px;
+            padding: 16px 28px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+            z-index: 1000;
+            opacity: 0;
+            transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            text-align: center;
+            max-width: 90vw;
+            border: 1px solid rgba(255,255,255,0.6);
+        }
 
-    .toast.show &#123;
-        transform: translateX(-50%) translateY(0);
-        opacity: 1;
-    &#125;
+        .toast.show {
+            transform: translateX(-50%) translateY(0);
+            opacity: 1;
+        }
 
-    .toast .toast-icon &#123;
-        font-size: 28px;
-        display: block;
-        margin-bottom: 8px;
-    &#125;
+        .toast .toast-icon {
+            font-size: 28px;
+            display: block;
+            margin-bottom: 8px;
+        }
 
-    .toast .toast-msg &#123;
-        font-size: 14px;
-        color: #880e4f;
-        letter-spacing: 1px;
-    &#125;
-&lt;/style&gt;
-</code></pre>
+        .toast .toast-msg {
+            font-size: 14px;
+            color: #880e4f;
+            letter-spacing: 1px;
+        }
+    </style>
 </head>
 <body>
     <div class="hearts-bg" id="heartsBg"></div>
 
-<pre><code>&lt;div class=&quot;carousel-container&quot;&gt;
-    &lt;div class=&quot;title-bar&quot;&gt;
-        &lt;h1&gt;💕 回忆相册 💕&lt;/h1&gt;
-    &lt;/div&gt;
+    <div class="carousel-container">
+        <div class="title-bar">
+            <h1>💕 回忆相册 💕</h1>
+        </div>
 
-    &lt;div class=&quot;carousel&quot; id=&quot;carousel&quot;&gt;
-        &lt;button class=&quot;nav-btn prev&quot; onclick=&quot;changeSlide(-1)&quot;&gt;❮&lt;/button&gt;
-        &lt;button class=&quot;nav-btn next&quot; onclick=&quot;changeSlide(1)&quot;&gt;❯&lt;/button&gt;
+        <div class="carousel" id="carousel">
+            <button class="nav-btn prev" onclick="changeSlide(-1)">❮</button>
+            <button class="nav-btn next" onclick="changeSlide(1)">❯</button>
 
-        &lt;div class=&quot;slide active&quot;&gt;
-            &lt;div class=&quot;slide-image-wrapper&quot;&gt;
-                &lt;img src=&quot;/images/1.png&quot; alt=&quot;Photo 1&quot;&gt;
-            &lt;/div&gt;
-            &lt;div class=&quot;slide-caption&quot;&gt;
-                &lt;p&gt;每一刻的温柔，都值得被珍藏&lt;/p&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
-        &lt;div class=&quot;slide&quot;&gt;
-            &lt;div class=&quot;slide-image-wrapper&quot;&gt;
-                &lt;img src=&quot;/images/2.png&quot; alt=&quot;Photo 2&quot;&gt;
-            &lt;/div&gt;
-            &lt;div class=&quot;slide-caption&quot;&gt;
-                &lt;p&gt;与你相遇，是最美的意外&lt;/p&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
-        &lt;div class=&quot;slide&quot;&gt;
-            &lt;div class=&quot;slide-image-wrapper&quot;&gt;
-                &lt;img src=&quot;/images/3.png&quot; alt=&quot;Photo 3&quot;&gt;
-            &lt;/div&gt;
-            &lt;div class=&quot;slide-caption&quot;&gt;
-                &lt;p&gt;时光清浅，许你安然&lt;/p&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
-        &lt;div class=&quot;slide&quot;&gt;
-            &lt;div class=&quot;slide-image-wrapper&quot;&gt;
-                &lt;img src=&quot;/images/4.png&quot; alt=&quot;Photo 4&quot;&gt;
-            &lt;/div&gt;
-            &lt;div class=&quot;slide-caption&quot;&gt;
-                &lt;p&gt;愿世间美好，与你环环相扣&lt;/p&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
-        &lt;div class=&quot;slide&quot;&gt;
-            &lt;div class=&quot;slide-image-wrapper&quot;&gt;
-                &lt;img src=&quot;/images/5.png&quot; alt=&quot;Photo 5&quot;&gt;
-            &lt;/div&gt;
-            &lt;div class=&quot;slide-caption&quot;&gt;
-                &lt;p&gt;此生尽兴，赤诚善良&lt;/p&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
+            <div class="slide active">
+                <div class="slide-image-wrapper">
+                    <img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="../images/1.png"
+                      alt="Photo 1"
+                >
+                </div>
+                <div class="slide-caption">
+                    <p>每一刻的温柔，都值得被珍藏</p>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide-image-wrapper">
+                    <img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="../images/2.png"
+                      alt="Photo 2"
+                >
+                </div>
+                <div class="slide-caption">
+                    <p>与你相遇，是最美的意外</p>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide-image-wrapper">
+                    <img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="../images/3.png"
+                      alt="Photo 3"
+                >
+                </div>
+                <div class="slide-caption">
+                    <p>时光清浅，许你安然</p>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide-image-wrapper">
+                    <img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="../images/4.png"
+                      alt="Photo 4"
+                >
+                </div>
+                <div class="slide-caption">
+                    <p>愿世间美好，与你环环相扣</p>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide-image-wrapper">
+                    <img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="../images/5.png"
+                      alt="Photo 5"
+                >
+                </div>
+                <div class="slide-caption">
+                    <p>此生尽兴，赤诚善良</p>
+                </div>
+            </div>
+        </div>
 
-    &lt;div class=&quot;dots&quot; id=&quot;dots&quot;&gt;&lt;/div&gt;
-    &lt;div class=&quot;progress-bar&quot;&gt;
-        &lt;div class=&quot;progress-bar-fill&quot; id=&quot;progressFill&quot;&gt;&lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;pause-hint&quot;&gt;点击图片暂停 / 播放&lt;/div&gt;
-&lt;/div&gt;
+        <div class="dots" id="dots"></div>
+        <div class="progress-bar">
+            <div class="progress-bar-fill" id="progressFill"></div>
+        </div>
+        <div class="pause-hint">点击图片暂停 / 播放</div>
+    </div>
 
-&lt;!-- Confession Module --&gt;
-&lt;div class=&quot;confession-card&quot;&gt;
-    &lt;span class=&quot;heart-icon&quot;&gt;💌&lt;/span&gt;
-    &lt;div class=&quot;confession-text&quot;&gt;
-        世间五味俱全，&lt;br&gt;
-        谢谢你给我的&lt;span class=&quot;highlight&quot;&gt;甜&lt;/span&gt;。&lt;br&gt;
-        你愿意和我一起，&lt;br&gt;
-        走过余生的每一天吗？
-    &lt;/div&gt;
-    &lt;div class=&quot;confession-buttons&quot;&gt;
-        &lt;button class=&quot;confession-btn btn-accept&quot; onclick=&quot;sendConfession(&#39;accept&#39;)&quot;&gt;💕 我愿意&lt;/button&gt;
-        &lt;button class=&quot;confession-btn btn-think&quot; onclick=&quot;sendConfession(&#39;think&#39;)&quot;&gt;🌸 还要考虑&lt;/button&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
+    <!-- Confession Module -->
+    <div class="confession-card">
+        <span class="heart-icon">💌</span>
+        <div class="confession-text">
+            世间五味俱全，<br>
+            谢谢你给我的<span class="highlight">甜</span>。<br>
+            你愿意和我一起，<br>
+            走过余生的每一天吗？
+        </div>
+        <div class="confession-buttons">
+            <button class="confession-btn btn-accept" onclick="sendConfession('accept')">💕 我愿意</button>
+            <button class="confession-btn btn-think" onclick="sendConfession('think')">🌸 还要考虑</button>
+        </div>
+    </div>
 
-&lt;!-- Toast --&gt;
-&lt;div class=&quot;toast&quot; id=&quot;toast&quot;&gt;
-    &lt;span class=&quot;toast-icon&quot; id=&quot;toastIcon&quot;&gt;&lt;/span&gt;
-    &lt;div class=&quot;toast-msg&quot; id=&quot;toastMsg&quot;&gt;&lt;/div&gt;
-&lt;/div&gt;
+    <!-- Toast -->
+    <div class="toast" id="toast">
+        <span class="toast-icon" id="toastIcon"></span>
+        <div class="toast-msg" id="toastMsg"></div>
+    </div>
 
-&lt;script&gt;
-    const slides = document.querySelectorAll(&#39;.slide&#39;);
-    const dotsContainer = document.getElementById(&#39;dots&#39;);
-    const progressFill = document.getElementById(&#39;progressFill&#39;);
-    const totalSlides = slides.length;
-    let currentSlide = 0;
-    let isPlaying = true;
-    let autoPlayInterval = null;
-    let progressInterval = null;
-    const SLIDE_DURATION = 4000;
-    const PROGRESS_STEP = 50;
+    <script>
+        const slides = document.querySelectorAll('.slide');
+        const dotsContainer = document.getElementById('dots');
+        const progressFill = document.getElementById('progressFill');
+        const totalSlides = slides.length;
+        let currentSlide = 0;
+        let isPlaying = true;
+        let autoPlayInterval = null;
+        let progressInterval = null;
+        const SLIDE_DURATION = 4000;
+        const PROGRESS_STEP = 50;
 
-    // Create dots
-    slides.forEach((_, i) =&gt; &#123;
-        const dot = document.createElement(&#39;button&#39;);
-        dot.classList.add(&#39;dot&#39;);
-        if (i === 0) dot.classList.add(&#39;active&#39;);
-        dot.addEventListener(&#39;click&#39;, () =&gt; goToSlide(i));
-        dotsContainer.appendChild(dot);
-    &#125;);
+        // Create dots
+        slides.forEach((_, i) => {
+            const dot = document.createElement('button');
+            dot.classList.add('dot');
+            if (i === 0) dot.classList.add('active');
+            dot.addEventListener('click', () => goToSlide(i));
+            dotsContainer.appendChild(dot);
+        });
 
-    function updateDots() &#123;
-        document.querySelectorAll(&#39;.dot&#39;).forEach((d, i) =&gt; &#123;
-            d.classList.toggle(&#39;active&#39;, i === currentSlide);
-        &#125;);
-    &#125;
+        function updateDots() {
+            document.querySelectorAll('.dot').forEach((d, i) => {
+                d.classList.toggle('active', i === currentSlide);
+            });
+        }
 
-    function goToSlide(index) &#123;
-        slides[currentSlide].classList.remove(&#39;active&#39;);
-        currentSlide = (index + totalSlides) % totalSlides;
-        slides[currentSlide].classList.add(&#39;active&#39;);
-        updateDots();
-        resetProgress();
-    &#125;
+        function goToSlide(index) {
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (index + totalSlides) % totalSlides;
+            slides[currentSlide].classList.add('active');
+            updateDots();
+            resetProgress();
+        }
 
-    function changeSlide(direction) &#123;
-        goToSlide(currentSlide + direction);
-    &#125;
+        function changeSlide(direction) {
+            goToSlide(currentSlide + direction);
+        }
 
-    function resetProgress() &#123;
-        progressFill.style.transition = &#39;none&#39;;
-        progressFill.style.width = &#39;0%&#39;;
-        requestAnimationFrame(() =&gt; &#123;
-            requestAnimationFrame(() =&gt; &#123;
-                progressFill.style.transition = &#39;none&#39;;
-            &#125;);
-        &#125;);
-    &#125;
+        function resetProgress() {
+            progressFill.style.transition = 'none';
+            progressFill.style.width = '0%';
+            requestAnimationFrame(() => {
+                requestAnimationFrame(() => {
+                    progressFill.style.transition = 'none';
+                });
+            });
+        }
 
-    function startProgress() &#123;
-        let elapsed = 0;
-        clearInterval(progressInterval);
-        progressInterval = setInterval(() =&gt; &#123;
-            if (!isPlaying) return;
-            elapsed += PROGRESS_STEP;
-            const pct = Math.min((elapsed / SLIDE_DURATION) * 100, 100);
-            progressFill.style.width = pct + &#39;%&#39;;
-            if (elapsed &gt;= SLIDE_DURATION) &#123;
-                changeSlide(1);
-                elapsed = 0;
-            &#125;
-        &#125;, PROGRESS_STEP);
-    &#125;
+        function startProgress() {
+            let elapsed = 0;
+            clearInterval(progressInterval);
+            progressInterval = setInterval(() => {
+                if (!isPlaying) return;
+                elapsed += PROGRESS_STEP;
+                const pct = Math.min((elapsed / SLIDE_DURATION) * 100, 100);
+                progressFill.style.width = pct + '%';
+                if (elapsed >= SLIDE_DURATION) {
+                    changeSlide(1);
+                    elapsed = 0;
+                }
+            }, PROGRESS_STEP);
+        }
 
-    function createHearts() &#123;
-        const container = document.getElementById(&#39;heartsBg&#39;);
-        const hearts = [&#39;♥&#39;, &#39;♡&#39;, &#39;❤&#39;, &#39;💕&#39;, &#39;✿&#39;];
-        for (let i = 0; i &lt; 20; i++) &#123;
-            const h = document.createElement(&#39;div&#39;);
-            h.classList.add(&#39;heart&#39;);
-            h.textContent = hearts[Math.floor(Math.random() * hearts.length)];
-            h.style.left = Math.random() * 100 + &#39;vw&#39;;
-            h.style.fontSize = (Math.random() * 18 + 12) + &#39;px&#39;;
-            h.style.animationDuration = (Math.random() * 10 + 10) + &#39;s&#39;;
-            h.style.animationDelay = (Math.random() * 15) + &#39;s&#39;;
-            container.appendChild(h);
-        &#125;
-    &#125;
+        function createHearts() {
+            const container = document.getElementById('heartsBg');
+            const hearts = ['♥', '♡', '❤', '💕', '✿'];
+            for (let i = 0; i < 20; i++) {
+                const h = document.createElement('div');
+                h.classList.add('heart');
+                h.textContent = hearts[Math.floor(Math.random() * hearts.length)];
+                h.style.left = Math.random() * 100 + 'vw';
+                h.style.fontSize = (Math.random() * 18 + 12) + 'px';
+                h.style.animationDuration = (Math.random() * 10 + 10) + 's';
+                h.style.animationDelay = (Math.random() * 15) + 's';
+                container.appendChild(h);
+            }
+        }
 
-    // Click carousel to toggle play
-    document.getElementById(&#39;carousel&#39;).addEventListener(&#39;click&#39;, (e) =&gt; &#123;
-        if (e.target.closest(&#39;.nav-btn&#39;) || e.target.closest(&#39;.dot&#39;)) return;
-        isPlaying = !isPlaying;
-    &#125;);
+        // Click carousel to toggle play
+        document.getElementById('carousel').addEventListener('click', (e) => {
+            if (e.target.closest('.nav-btn') || e.target.closest('.dot')) return;
+            isPlaying = !isPlaying;
+        });
 
-    // Keyboard nav
-    document.addEventListener(&#39;keydown&#39;, (e) =&gt; &#123;
-        if (e.key === &#39;ArrowLeft&#39;) changeSlide(-1);
-        if (e.key === &#39;ArrowRight&#39;) changeSlide(1);
-        if (e.key === &#39; &#39;) &#123; e.preventDefault(); isPlaying = !isPlaying; &#125;
-    &#125;);
+        // Keyboard nav
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowLeft') changeSlide(-1);
+            if (e.key === 'ArrowRight') changeSlide(1);
+            if (e.key === ' ') { e.preventDefault(); isPlaying = !isPlaying; }
+        });
 
-    createHearts();
-    startProgress();
+        createHearts();
+        startProgress();
 
-    // Confession module
-    const EMAIL_TO = &#39;1449035468@qq.com&#39;;
+        // Confession module
+        const EMAIL_TO = '1449035468@qq.com';
 
-    function sendConfession(type) &#123;
-        const timestamp = new Date().toLocaleString(&#39;zh-CN&#39;);
-        let subject, body, toastIcon, toastMsg;
+        function sendConfession(type) {
+            const timestamp = new Date().toLocaleString('zh-CN');
+            let subject, body, toastIcon, toastMsg;
 
-        if (type === &#39;accept&#39;) &#123;
-            subject = encodeURIComponent(&#39;💌 收到一份甜甜的回复&#39;);
-            body = encodeURIComponent(
-                `有人对你的表白回复了「我愿意」！\n\n` +
-                `时间：$&#123;timestamp&#125;\n` +
-                `回复：我愿意💕\n\n` +
-                `祝你们幸福！`
-            );
-            toastIcon = &#39;🎉&#39;;
-            toastMsg = &#39;已收到你的心意，邮件正在发送~&#39;;
-        &#125; else &#123;
-            subject = encodeURIComponent(&#39;💌 收到一份温柔的回复&#39;);
-            body = encodeURIComponent(
-                `有人对你的表白回复了「还要考虑」。\n\n` +
-                `时间：$&#123;timestamp&#125;\n` +
-                `回复：还要考虑🌸\n\n` +
-                `耐心等待，幸福会来的。`
-            );
-            toastIcon = &#39;🤔&#39;;
-            toastMsg = &#39;已收到你的回复，邮件正在发送~&#39;;
-        &#125;
+            if (type === 'accept') {
+                subject = encodeURIComponent('💌 收到一份甜甜的回复');
+                body = encodeURIComponent(
+                    `有人对你的表白回复了「我愿意」！\n\n` +
+                    `时间：${timestamp}\n` +
+                    `回复：我愿意💕\n\n` +
+                    `祝你们幸福！`
+                );
+                toastIcon = '🎉';
+                toastMsg = '已收到你的心意，邮件正在发送~';
+            } else {
+                subject = encodeURIComponent('💌 收到一份温柔的回复');
+                body = encodeURIComponent(
+                    `有人对你的表白回复了「还要考虑」。\n\n` +
+                    `时间：${timestamp}\n` +
+                    `回复：还要考虑🌸\n\n` +
+                    `耐心等待，幸福会来的。`
+                );
+                toastIcon = '🤔';
+                toastMsg = '已收到你的回复，邮件正在发送~';
+            }
 
-        const mailtoLink = `mailto:$&#123;EMAIL_TO&#125;?subject=$&#123;subject&#125;&amp;body=$&#123;body&#125;`;
+            const mailtoLink = `mailto:${EMAIL_TO}?subject=${subject}&body=${body}`;
 
-        // Show toast
-        showToast(toastIcon, toastMsg);
+            // Show toast
+            showToast(toastIcon, toastMsg);
 
-        // Open mail client after a short delay
-        setTimeout(() =&gt; &#123;
-            window.location.href = mailtoLink;
-        &#125;, 800);
-    &#125;
+            // Open mail client after a short delay
+            setTimeout(() => {
+                window.location.href = mailtoLink;
+            }, 800);
+        }
 
-    function showToast(icon, msg) &#123;
-        const toast = document.getElementById(&#39;toast&#39;);
-        document.getElementById(&#39;toastIcon&#39;).textContent = icon;
-        document.getElementById(&#39;toastMsg&#39;).textContent = msg;
-        toast.classList.add(&#39;show&#39;);
-        setTimeout(() =&gt; &#123;
-            toast.classList.remove(&#39;show&#39;);
-        &#125;, 3000);
-    &#125;
-&lt;/script&gt;
-</code></pre>
+        function showToast(icon, msg) {
+            const toast = document.getElementById('toast');
+            document.getElementById('toastIcon').textContent = icon;
+            document.getElementById('toastMsg').textContent = msg;
+            toast.classList.add('show');
+            setTimeout(() => {
+                toast.classList.remove('show');
+            }, 3000);
+        }
+    </script>
 </body>
 </html>
+
 		</div>
 
 		
 		<div class="post-copyright-info w-full my-8 px-2 sm:px-6 md:px-8">
 			<div class="article-copyright-info-container">
     <ul>
-        <li><strong>标题:</strong> Love Gallery</li>
+        <li><strong>标题:</strong> Love</li>
         <li><strong>作者:</strong> Yuhan Wang</li>
         <li><strong>创建于
-                :</strong> 2024-04-18 00:33:57</li>
+                :</strong> 2026-04-18 00:00:00</li>
         
             <li>
                 <strong>更新于
-                    :</strong> 2026-04-18 00:41:50
+                    :</strong> 2026-04-18 00:51:07
             </li>
         
         <li>
-            <strong>链接:</strong> https://cabbagewyh.github.io/2024/04/18/love/
+            <strong>链接:</strong> https://cabbagewyh.github.io/2026/04/18/love_initial/
         </li>
         <li>
             <strong>
@@ -1026,18 +1051,18 @@
 		
 		<div class="article-nav my-8 flex justify-between items-center px-2 sm:px-6 md:px-8">
 			
-			<div class="article-prev border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
-				<a class="prev" rel="prev" href="/2026/04/16/hello-world/">
-					<span class="left arrow-icon flex justify-center items-center">
-						<i class="fa-solid fa-chevron-left"></i>
-					</span>
+			
+			<div class="article-next border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
+				<a class="next" rel="next" href="/2026/04/18/love/">
 					<span class="title flex justify-center items-center">
-						<span class="post-nav-title-item truncate max-w-48"></span>
-						<span class="post-nav-item">上一篇</span>
+						<span class="post-nav-title-item truncate max-w-48">Love</span>
+						<span class="post-nav-item">下一篇</span>
+					</span>
+					<span class="right arrow-icon flex justify-center items-center">
+						<i class="fa-solid fa-chevron-right"></i>
 					</span>
 				</a>
 			</div>
-			
 			
 		</div>
 		
@@ -1113,8 +1138,8 @@
 		<div class="post-toc-wrap">
 	<div class="post-toc">
 		<div class="toc-title">目录</div>
-		<div class="page-title">Love Gallery</div>
-		
+		<div class="page-title">Love</div>
+		<ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link"><span class="nav-text">💕 回忆相册 💕</span></a></li></ol>
 
 	</div>
 </div>
